@@ -481,17 +481,16 @@ body {
 /* ----------------- FIN DE ESTRUCTURA RESPONSIVE-----------*/
 /* -------------------SEGUNDA PAGINA -----------------------*/
 .gridbox2 {
- 
         display: grid; 
-        grid-auto-rows: 1fr; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        grid-template-rows: 10px 15% 15% 1fr; 
+        grid-template-columns: 70vw, 30vw; 
+        grid-template-rows: repeat(3, 500px);
         gap: 10px 10px; 
         grid-template-areas: 
-          "Nav Nav Nav"
-          "Title-and-image Title-and-image Title-and-image"
+          "Nav Nav"
+          "Title-and-image Title-and-image"
           "Section Section Aside"
           "Section Section Aside"; 
+
       }
   .navbar2 {
     margin: 0;
@@ -513,19 +512,25 @@ body {
     grid-area: Section;
  }
 .Title-and-image { 
-    grid-area: Title-and-image;
-    margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 25%, 25%;
-    grid-template-areas: "fotopage fotopage"
-    "textopage2 textopage2";
-}
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 550px;
+    grid-template-areas:
+    "img2 text2";
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    align-items: center;
+  }
+
 .titlePage2 {
     text-align: center;
-    grid-area: textopage2;
+    grid-area: text2;
 }
 .fotoPage {
+    width: 100%;
     object-fit: cover;
-    grid-area: fotopage;
+    grid-area: img2;
 }
+
