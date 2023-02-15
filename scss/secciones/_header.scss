@@ -1,0 +1,44 @@
+/*--------------nav ---------------------/*/
+
+.item1 {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 50px;
+    grid-template-areas:
+        "logo ancord";
+}
+
+.logo {
+    margin-left: 20px;
+    grid-area: logo;
+}
+
+.logo {
+    img {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+}
+}
+
+.ancord {
+    margin-top: 10px;
+    grid-area: ancord;
+    display: inline-block;
+    padding: 5px;
+}
+
+.ancord {
+    a {
+    text-decoration: none;
+}
+ }
+
+.ancord {
+    a:hover {
+    color: antiquewhite;
+}
+ }

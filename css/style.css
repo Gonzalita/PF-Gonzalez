@@ -1,19 +1,50 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  color: white;
-  font-family: 'Poppins', sans-serif; }
+/*--------------nav ---------------------/*/
+.item1 {
+  display: grid;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 50px;
+  grid-template-areas: "logo ancord"; }
 
-header {
-  background-color: black; }
+.logo {
+  margin-left: 20px;
+  grid-area: logo; }
 
-body {
-  background-color: black;
-  width: 100vw;
-  overflow-x: hidden; }
+.logo img {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%; }
+
+.ancord {
+  margin-top: 10px;
+  grid-area: ancord;
+  display: inline-block;
+  padding: 5px; }
+
+.ancord a {
+  text-decoration: none; }
+
+.ancord a:hover {
+  color: antiquewhite; }
+
+/* ----------------------------------- SECCION FOOTER ------------------------------*/
+.footer1 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 1fr, 1fr;
+  grid-row-gap: 20px;
+  justify-items: center; }
+
+.redes-sociales {
+  display: flex;
+  flex-direction: row; }
+
+.map:hover {
+  transform: scale(2); }
 
 /*/ -------------------------------------------       GALERIA        ---------------------------     /*/
 .container-galeria {
@@ -54,6 +85,68 @@ body {
   object-fit: cover; }
 
 /*/ ----------------------------------------- FIN DE GALERIA --------------------------  /*/
+/* -------------------SEGUNDA PAGINA -----------------------*/
+.gridbox2 {
+  display: grid;
+  grid-template-columns: 70vw, 30vw;
+  grid-template-rows: repeat(3, 500px);
+  gap: 10px 10px;
+  grid-template-areas: "Nav Nav" "Title-and-image Title-and-image" "Section Section Aside" "Section Section Aside"; }
+
+.navbar2 {
+  margin: 0;
+  grid-area: Nav;
+  display: grid;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 50px;
+  grid-template-areas: "logo ancord"; }
+
+.Aside {
+  grid-area: Aside; }
+
+.Section {
+  grid-area: Section; }
+
+.Title-and-image {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 550px;
+  grid-template-areas: "img2 text2";
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  align-items: center; }
+
+.titlePage2 {
+  text-align: center;
+  grid-area: text2; }
+
+.fotoPage {
+  width: 100%;
+  object-fit: cover;
+  grid-area: img2; }
+
+* {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif; }
+
+header {
+  background-color: black; }
+
+body {
+  background-color: black;
+  width: 100vw;
+  overflow-x: hidden; }
+
 /*/ ----------------------------------------- SECCION FAQ ---------------------------/*/
 .white {
   background-color: white;
@@ -89,37 +182,6 @@ body {
   color: black;
   background-color: white;
   font-size: 1rem; }
-
-/*--------------nav ---------------------/*/
-.item1 {
-  display: grid;
-  position: fixed;
-  width: 100%;
-  margin-bottom: 40px;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 50px;
-  grid-template-areas: "logo ancord"; }
-
-.logo {
-  margin-left: 20px;
-  grid-area: logo; }
-
-.logo img {
-  width: 80px;
-  height: 70px;
-  border-radius: 50%; }
-
-.ancord {
-  margin-top: 10px;
-  grid-area: ancord;
-  display: inline-block;
-  padding: 5px; }
-
-.ancord a {
-  text-decoration: none; }
-
-.ancord a:hover {
-  color: antiquewhite; }
 
 /*-----------------------SECCION QUIENES SOMOS -----------------*/
 .container-quienessomos {
@@ -180,22 +242,6 @@ body {
   color: blanchedalmond;
   filter: grayscale(100%);
   text-align: justify; }
-
-/* ----------------------------------- SECCION FOOTER ------------------------------*/
-.footer1 {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: 1fr, 1fr;
-  grid-row-gap: 20px;
-  justify-items: center; }
-
-.redes-sociales {
-  display: flex;
-  flex-direction: row; }
-
-.map:hover {
-  transform: scale(2); }
 
 /* ---------------------------- CONTAINER GENERAL -------------------------*/
 .gridbox {
@@ -344,48 +390,3 @@ body {
     font-size: 1rem; } }
 
 /* ----------------- FIN DE ESTRUCTURA RESPONSIVE-----------*/
-/* -------------------SEGUNDA PAGINA -----------------------*/
-.gridbox2 {
-  display: grid;
-  grid-template-columns: 70vw, 30vw;
-  grid-template-rows: repeat(3, 500px);
-  gap: 10px 10px;
-  grid-template-areas: "Nav Nav" "Title-and-image Title-and-image" "Section Section Aside" "Section Section Aside"; }
-
-.navbar2 {
-  margin: 0;
-  grid-area: Nav;
-  display: grid;
-  background-color: black;
-  position: fixed;
-  width: 100%;
-  margin-bottom: 40px;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 50px;
-  grid-template-areas: "logo ancord"; }
-
-.Aside {
-  grid-area: Aside; }
-
-.Section {
-  grid-area: Section; }
-
-.Title-and-image {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 550px;
-  grid-template-areas: "img2 text2";
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 50px;
-  margin-left: 50px;
-  align-items: center; }
-
-.titlePage2 {
-  text-align: center;
-  grid-area: text2; }
-
-.fotoPage {
-  width: 100%;
-  object-fit: cover;
-  grid-area: img2; }
