@@ -22,3 +22,20 @@ container-articulos-paginas {
 paragraph-contenedor {
     margin-bottom: 30px;
  }
+ .title-section {
+    top: 220px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 60px;
+ }
+ .bg-image {
+    background-image: url(/images/imagen-12.jpg);
+    opacity: 0,2;
+ }
+ .formulario {
+    width: (100vw/2);
+ }
+ .press {
+    display: inline-block;
+    padding-left: 1rem;
+ }
