@@ -131,22 +131,6 @@
   object-fit: cover;
   grid-area: img2; }
 
-* {
-  margin: 0;
-  padding: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  color: white;
-  font-family: 'Poppins', sans-serif; }
-
-header {
-  background-color: black; }
-
-body {
-  background-color: black;
-  width: 100vw;
-  overflow-x: hidden; }
-
 /*/ ----------------------------------------- SECCION FAQ ---------------------------/*/
 .white {
   background-color: white;
@@ -242,22 +226,6 @@ body {
   color: blanchedalmond;
   filter: grayscale(100%);
   text-align: justify; }
-
-/* ---------------------------- CONTAINER GENERAL -------------------------*/
-.gridbox {
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "nav" "main" "footer"; }
-
-.totem {
-  grid-area: nav; }
-
-.item2 {
-  grid-area: main; }
-
-.item3 {
-  grid-area: footer; }
 
 /*----------------------ESTRATEGIA RESPONSIVE: MOBILE LAST ------------*/
 /* --------------------- DISPOSITIVOS MEDIANOS -----------------------*/
@@ -390,3 +358,34 @@ body {
     font-size: 1rem; } }
 
 /* ----------------- FIN DE ESTRUCTURA RESPONSIVE-----------*/
+* {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif; }
+
+header {
+  background-color: black; }
+
+body {
+  background-color: black;
+  width: 100vw;
+  overflow-x: hidden; }
+
+/* ---------------------------- CONTAINER GENERAL -------------------------*/
+.gridbox {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "nav" "main" "footer"; }
+
+.totem {
+  grid-area: nav; }
+
+.item2 {
+  grid-area: main; }
+
+.item3 {
+  grid-area: footer; }

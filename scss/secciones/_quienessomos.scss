@@ -1,0 +1,52 @@
+
+
+
+/*-----------------------SECCION QUIENES SOMOS -----------------*/
+
+.container-quienessomos {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 550px;
+    grid-template-areas: "text img";
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+    align-items: end;
+}
+
+.quienessomosdoc1 {
+    grid-area: img;
+}
+
+.quienessomosdoc1 {
+    img {
+    object-fit: cover;
+    width: 100%;
+ }
+}
+
+.quienessomosdoc2 {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+}
+
+.quienessomosdoc2 { 
+    p {
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+ }
+
+.title {
+    position: absolute;
+    top: 250px;
+    left: 60px;
+    font-weight: 500;
+    font-size: 90px;
+    z-index: 1;
+    border: solid 6px;
+    font-family: 'Righteous', cursive;
+    color: brown;
+}

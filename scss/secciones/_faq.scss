@@ -1,0 +1,44 @@
+
+
+
+/*/ ----------------------------------------- SECCION FAQ ---------------------------/*/
+.white {
+    background-color: white;
+    margin-top: 20px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+.container-quesionList {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat (3, 200px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    background-color: white;
+
+}
+
+.txcontenedor {
+    padding: 10px;
+    border: 1px solid;
+    justify-self: stretch;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+}
+.text {
+    text-align: center;
+    background-color: white;
+    font-size: 1rem;
+    color: black;
+}
+
+.text {
+    span {
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+}
+}
