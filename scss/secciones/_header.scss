@@ -3,6 +3,7 @@
 .item1 {
     display: grid;
     position: fixed;
+    top: 0px;
     width: 100%;
     margin-bottom: 40px;
     grid-template-columns: repeat(2, 50%);

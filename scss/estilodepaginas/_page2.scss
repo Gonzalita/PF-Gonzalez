@@ -1,51 +1,18 @@
 /* -------------------SEGUNDA PAGINA -----------------------*/
-.gridbox2 {
-    display: grid; 
-    grid-template-columns: 70vw, 30vw; 
-    grid-template-rows: repeat(3, 500px);
-    gap: 10px 10px; 
-    grid-template-areas: 
-      "Nav Nav"
-      "Title-and-image Title-and-image"
-      "Section Section Aside"
-      "Section Section Aside"; 
 
-  }
 .navbar2 {
 margin: 0;
 grid-area: Nav;
 display: grid;
 background-color: black;
 position: fixed;
+top: 0px;
 width: 100%;
 margin-bottom: 40px;
 grid-template-columns: repeat(2, 50%);
 grid-template-rows: 50px;
 grid-template-areas:
     "logo ancord";
-}
-.Aside { 
-grid-area: Aside; 
-}
-.Section { 
-grid-area: Section;
-}
-.Title-and-image { 
-display: grid;
-grid-template-columns: 70% 30%;
-grid-template-rows: 550px;
-grid-template-areas:
-"img2 text2";
-margin-top: 40px;
-margin-bottom: 40px;
-margin-right: 50px;
-margin-left: 50px;
-align-items: center;
-}
-
-.titlePage2 {
-text-align: center;
-grid-area: text2;
 }
 .fotoPage {
 width: 100%;
