@@ -4,6 +4,7 @@
     display: grid;
     position: fixed;
     top: 0px;
+    z-index: 1;
     width: 100%;
     margin-bottom: 40px;
     grid-template-columns: repeat(2, 50%);
@@ -35,6 +36,7 @@
 .ancord {
     a {
     text-decoration: none;
+    color: white;
 }
  }
 

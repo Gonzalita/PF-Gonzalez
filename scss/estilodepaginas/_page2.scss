@@ -1,21 +1,19 @@
-/* -------------------SEGUNDA PAGINA -----------------------*/
-
-.navbar2 {
-margin: 0;
-grid-area: Nav;
-display: grid;
-background-color: black;
-position: fixed;
-top: 0px;
-width: 100%;
-margin-bottom: 40px;
-grid-template-columns: repeat(2, 50%);
-grid-template-rows: 50px;
-grid-template-areas:
-    "logo ancord";
+/* NAVBAR */
+.header-page2 {
+    width: 100vw;
+    
 }
-.fotoPage {
-width: 100%;
-object-fit: cover;
-grid-area: img2;
+.header-nav {
+    height:70px;
+    background-color: black !important;
+    img {
+        border-radius: 50%;
+    }
+    a {
+        color: white!important;
+        font-weight: 400;
+    }
+}
+a:hover {
+    color:antiquewhite!important;
 }
