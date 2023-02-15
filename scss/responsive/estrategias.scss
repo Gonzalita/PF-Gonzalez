@@ -20,6 +20,26 @@
       .item3{
         grid-area:footer;
       }
+      .container-quienessomos {
+        display: grid;
+        margin-top:50px;
+        grid-template-columns: 80vw;
+        grid-template-rows: auto;
+        grid-template-areas: "img" "text";
+        grid-row-gap: 30px;
+        align-items: center;
+    
+    }
+    .title {
+        position: absolute;
+        top: 220px;
+        left: 30px;
+        font-weight: 500;
+        font-size: 60px;
+        border: solid 3px;
+        color: red;
+        font-family: 'Righteous', cursive;;
+    }
   }
 
 /* --------------------- DISPOSITIVOS PEQUEÑOS -------------------------*/
@@ -52,10 +72,11 @@
 
       .container-quienessomos {
         display: grid;
-        margin-top:60px ;
         grid-template-columns: 80vw;
         grid-template-rows: auto;
         grid-template-areas: "img" "text";
+        align-items: center;
+    
     }
     
     .quienessomosdoc1 {
@@ -80,11 +101,10 @@
      }
       .title {
         position: absolute;
-        top: 200px;
+        top: 190px;
         left: 40px;
-        font-weight: 900;
+        font-weight: 500;
         font-size: 50px;
-        z-index: 1;
         border: solid 3px;
         color: red;
         font-family: 'Righteous', cursive;;
@@ -214,4 +234,29 @@
      }
     }
   }
+/* -------------- 1023 px ---------------------------------*/
+@media screen and (min-width:768px){
+    .container-quienessomos {
+        display: grid;
+        grid-template-columns: 80vw;
+        grid-template-rows: auto;
+        grid-template-areas: "img" "text";
+        grid-row-gap: 30px;
+        align-items: center;
+    
+    }
+    .title {
+        position: absolute;
+        top: 300px;
+        left: 50px;
+        font-weight: 500;
+        font-size: 80px;
+        border: solid 3px;
+        color: red;
+        font-family: 'Righteous', cursive;;
+    }
+}
+
+
 /* ----------------- FIN DE ESTRUCTURA RESPONSIVE-----------*/
+
