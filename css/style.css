@@ -1,4 +1,41 @@
 @charset "UTF-8";
+/*--------SECCIONES--------*/
+* {
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  color: white;
+  font-family: 'Poppins', sans-serif; }
+
+header {
+  background-color: black; }
+
+body {
+  background-color: black;
+  width: 100vw;
+  overflow-x: hidden; }
+
+/* ---------------------------- CONTAINER GENERAL -------------------------*/
+.gridbox {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "nav" "main" "footer"; }
+
+.totem {
+  grid-area: nav; }
+
+.item2 {
+  grid-area: main; }
+
+.item3 {
+  grid-area: footer; }
+
+.title5 {
+  font-size: 3rem;
+  font-weight: 500; }
+
 /*--------------nav ---------------------/*/
 .item1 {
   display: grid;
@@ -98,22 +135,6 @@
   text-align: center; }
 
 /*/ ----------------------------------------- FIN DE GALERIA --------------------------  /*/
-/* NAVBAR */
-.header-page2 {
-  width: 100vw; }
-
-.header-nav {
-  height: 60px;
-  background-color: black !important; }
-  .header-nav img {
-    border-radius: 50%; }
-  .header-nav a {
-    color: white !important;
-    font-weight: 400; }
-
-a:hover {
-  color: antiquewhite !important; }
-
 /*/ ----------------------------------------- SECCION FAQ ---------------------------/*/
 .white {
   background-color: white;
@@ -217,6 +238,7 @@ a:hover {
     margin: 30px;
     text-align: center; }
 
+/*----ESTRATEGIA RESPONSIVE-------*/
 /*----------------------ESTRATEGIA RESPONSIVE: MOBILE LAST ------------*/
 /* --------------------- DISPOSITIVOS MEDIANOS -----------------------*/
 @media screen and (max-width: 768px) {
@@ -430,41 +452,22 @@ a:hover {
     font-family: 'Righteous', cursive; } }
 
 /* ----------------- FIN DE ESTRUCTURA RESPONSIVE-----------*/
-* {
-  margin: 0;
-  padding: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  color: white;
-  font-family: 'Poppins', sans-serif; }
+/*-----PAGINAS--------*/
+/* NAVBAR */
+.header-page2 {
+  width: 100vw; }
 
-header {
-  background-color: black; }
+.header-nav {
+  height: 60px;
+  background-color: black !important; }
+  .header-nav img {
+    border-radius: 50%; }
+  .header-nav a {
+    color: white !important;
+    font-weight: 400; }
 
-body {
-  background-color: black;
-  width: 100vw;
-  overflow-x: hidden; }
-
-/* ---------------------------- CONTAINER GENERAL -------------------------*/
-.gridbox {
-  display: grid;
-  grid-template-columns: 100vw;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "nav" "main" "footer"; }
-
-.totem {
-  grid-area: nav; }
-
-.item2 {
-  grid-area: main; }
-
-.item3 {
-  grid-area: footer; }
-
-.title5 {
-  font-size: 3rem;
-  font-weight: 500; }
+a:hover {
+  color: antiquewhite !important; }
 
 .picturesign {
   width: 100%;
