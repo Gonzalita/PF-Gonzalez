@@ -422,8 +422,13 @@ paragraph-contenedor {
   font-size: 60px; }
 
 .bg-image {
-  background-image: url(/images/imagen-12.jpg);
-  opacity: 0,2; }
+  background-color: black;
+  height: 100vh; }
+
+.contenedor-form {
+  display: flex;
+  margin-top: 150px;
+  background-image: url(/images/imagen-12.jpg); }
 
 .formulario {
   width: 50vw; }
@@ -431,3 +436,6 @@ paragraph-contenedor {
 .press {
   display: inline-block;
   padding-left: 1rem; }
+
+.container-pio {
+  height: 300px; }
