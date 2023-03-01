@@ -49,6 +49,11 @@
 .map:hover {
   transform: scale(2); }
 
+.index-h5 {
+  font-size: 2rem;
+  margin: 30px;
+  text-align: center; }
+
 /*/ -------------------------------------------       GALERIA        ---------------------------     /*/
 .container-galeria {
   margin: 60px;
@@ -86,6 +91,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.index-h3 {
+  font-size: 2rem;
+  margin: 30px;
+  text-align: center; }
 
 /*/ ----------------------------------------- FIN DE GALERIA --------------------------  /*/
 /* NAVBAR */
@@ -140,6 +150,11 @@ a:hover {
   background-color: white;
   font-size: 1rem; }
 
+.index-h2 {
+  font-size: 2rem;
+  margin: 30px;
+  text-align: center; }
+
 /*-----------------------SECCION QUIENES SOMOS -----------------*/
 .container-quienessomos {
   display: grid;
@@ -166,7 +181,7 @@ a:hover {
 
 .quienessomosdoc2 p {
   padding-bottom: 30px;
-  font-size: 1rem; }
+  font-size: 2rem; }
 
 .title {
   position: absolute;
@@ -180,10 +195,7 @@ a:hover {
 
 /* ----------------------------------- SECCION ARTICULOS ------------------------------ */
 #articulos {
-  margin: 20px;
-  margin-bottom: 100px;
-  grid-template-columns: repeat(3, auto);
-  grid-column-gap: 5px; }
+  margin: 90px; }
   #articulos a {
     color: white !important;
     font-weight: 900;
@@ -192,6 +204,18 @@ a:hover {
     color: blanchedalmond;
     filter: grayscale(100%);
     text-align: justify; }
+  #articulos .dog-articule {
+    width: 100%;
+    height: px;
+    max-height: 1000px;
+    object-fit: cover; }
+  #articulos .articule-des {
+    font-size: 2em;
+    font-weight: 900; }
+  #articulos .index-h4 {
+    font-size: 2rem;
+    margin: 30px;
+    text-align: center; }
 
 /*----------------------ESTRATEGIA RESPONSIVE: MOBILE LAST ------------*/
 /* --------------------- DISPOSITIVOS MEDIANOS -----------------------*/
@@ -223,7 +247,49 @@ a:hover {
     font-size: 60px;
     border: solid 3px;
     color: red;
-    font-family: 'Righteous', cursive; } }
+    font-family: 'Righteous', cursive; }
+  /*-------------------------SECCION GALERIA---------------------*/
+  .container-galeria {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(5, 500px);
+    grid-template-areas: "image1" "image2" "image3" "image4" "image5";
+    justify-content: stretch;
+    align-content: stretch;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px; }
+    .container-galeria .image1 {
+      grid-area: image1; }
+    .container-galeria .image1 img {
+      object-position: 60% 15%; }
+    .container-galeria .image2 {
+      grid-area: image2; }
+    .container-galeria .image3 {
+      grid-area: image3; }
+    .container-galeria .image3 img {
+      object-position: 90% 5%; }
+    .container-galeria .image4 {
+      grid-area: image4; }
+    .container-galeria .image4 img {
+      object-position: 90% 25%; }
+    .container-galeria .image5 {
+      grid-area: image5; }
+    .container-galeria .cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  /*------------------------SECCION ARTICULOS--------------------*/
+  #articulos {
+    margin: 40px; }
+  .dog-articule {
+    width: 100%;
+    height: px;
+    max-height: 1000px;
+    object-fit: cover; }
+  .articule-des {
+    font-size: 2em;
+    font-weight: 900; } }
 
 /* --------------------- DISPOSITIVOS PEQUEÑOS -------------------------*/
 @media screen and (max-width: 480px) {
@@ -278,28 +344,25 @@ a:hover {
   .image1 {
     grid-area: image1; }
   .image1 img {
-    object-position: 60% 75%; }
+    object-position: 50% 25%; }
   .image2 {
     grid-area: image2; }
   .image3 {
     grid-area: image3; }
   .image3 img {
-    object-position: 90% 75%; }
+    object-position: 130% 65%; }
   .image4 {
     grid-area: image4; }
+  .image4 img {
+    object-position: 100% 20%; }
   .image5 {
     grid-area: image5; }
   .cover {
     width: 100%;
-    object-fit: cover; }
+    object-fit: fit; }
   /* ---------SECCION ARTICULOS ------*/
-  .articulos {
-    display: grid;
-    margin: 20px;
-    margin-bottom: 100px;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, auto);
-    grid-row-gap: 30px; }
+  #articulos {
+    margin: 20px; }
   .picture {
     width: 100%;
     height: 100%;
@@ -307,6 +370,14 @@ a:hover {
     opacity: 0.7;
     border-radius: 50%;
     transform: scale(1); }
+  .dog-articule {
+    width: 100%;
+    height: px;
+    max-height: 1000px;
+    object-fit: fit; }
+  .articule-des {
+    font-size: 2em;
+    font-weight: 900; }
   .ancord2 a:hover {
     color: blanchedalmond;
     filter: grayscale(100%);
@@ -343,15 +414,15 @@ a:hover {
 @media screen and (min-width: 768px) {
   .container-quienessomos {
     display: grid;
-    grid-template-columns: 80vw;
+    grid-template-columns: 90vw;
     grid-template-rows: auto;
     grid-template-areas: "img" "text";
-    grid-row-gap: 30px;
+    grid-row-gap: 80px;
     align-items: center; }
   .title {
     position: absolute;
-    top: 300px;
-    left: 50px;
+    top: 500px;
+    left: px;
     font-weight: 500;
     font-size: 80px;
     border: solid 3px;

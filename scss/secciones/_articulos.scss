@@ -1,9 +1,6 @@
 /* ----------------------------------- SECCION ARTICULOS ------------------------------ */
 #articulos {
-    margin: 20px;
-    margin-bottom: 100px;
-    grid-template-columns: repeat(3, auto);
-    grid-column-gap: 5px;
+    margin: 90px;
     a {
         color: white!important;
         font-weight: 900;
@@ -14,6 +11,22 @@
         filter: grayscale(100%);
         text-align: justify;
     }
+    .dog-articule {
+        width: 100%;
+        height: px;
+        max-height: 1000px;
+        object-fit: cover;
+    }
+    .articule-des {
+        font-size: 2em;
+        font-weight: 900;
+    }
+    .index-h4 {
+        font-size: 2rem;
+        margin: 30px;
+        text-align: center;
+    }
 }
+
  
 

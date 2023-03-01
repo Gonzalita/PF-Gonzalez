@@ -40,6 +40,78 @@
         color: red;
         font-family: 'Righteous', cursive;;
     }
+    /*-------------------------SECCION GALERIA---------------------*/
+    .container-galeria {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(5, 500px);
+    grid-template-areas:
+        "image1"
+        "image2"
+        "image3"
+        "image4"
+        "image5";
+    justify-content: stretch;
+    align-content: stretch;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    .image1 {
+        grid-area: image1;
+    }
+    
+    .image1 {
+    img {
+        object-position: 60% 15%;
+    }
+    }
+    .image2 {
+        grid-area: image2;
+    
+    }
+    
+    .image3 {
+        grid-area: image3;
+    }
+    .image3 {
+        img {
+        object-position: 90% 5%;
+    }
+    }
+    .image4 {
+        grid-area: image4;
+    }
+    .image4 {
+        img{
+            object-position: 90% 25%;
+        }
+    }
+    
+    .image5 {
+        grid-area: image5;
+    
+    }
+    
+    .cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+   }
+    /*------------------------SECCION ARTICULOS--------------------*/
+    #articulos {
+        margin: 40px;
+    }
+    .dog-articule {
+        width: 100%;
+        height: px;
+        max-height: 1000px;
+        object-fit: cover;
+    }
+    .articule-des {
+        font-size: 2em;
+        font-weight: 900;
+    }
   }
 
 /* --------------------- DISPOSITIVOS PEQUEÑOS -------------------------*/
@@ -132,7 +204,7 @@
     
     .image1 { 
         img {
-        object-position: 60% 75%;
+        object-position: 50% 25%;
     }
      }
     
@@ -147,13 +219,18 @@
     
     .image3 {
          img {
-        object-position: 90% 75%;
+        object-position: 130% 65%;
     }
      }
     
     .image4 {
         grid-area: image4;
     
+    }
+    .image4 {
+        img {
+            object-position: 100% 20%;
+        }
     }
     
     .image5 {
@@ -163,18 +240,11 @@
     
     .cover {
         width: 100%;
-
-        object-fit: cover;
+        object-fit: fit;
     }
     /* ---------SECCION ARTICULOS ------*/
-    .articulos {
-        display: grid;
-        margin: 20px;
-        margin-bottom: 100px;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3, auto);
-        grid-row-gap: 30px;
-       
+    #articulos {
+       margin: 20px;
     }
     
     .picture {
@@ -185,7 +255,16 @@
         border-radius: 50%;
         transform: scale(1);
     }
-    
+    .dog-articule {
+        width: 100%;
+        height: px;
+        max-height: 1000px;
+        object-fit: fit;
+    }
+    .articule-des {
+        font-size: 2em;
+        font-weight: 900;
+    }
     
     .ancord2 {
     a:hover {
@@ -238,17 +317,17 @@
 @media screen and (min-width:768px){
     .container-quienessomos {
         display: grid;
-        grid-template-columns: 80vw;
+        grid-template-columns: 90vw;
         grid-template-rows: auto;
         grid-template-areas: "img" "text";
-        grid-row-gap: 30px;
+        grid-row-gap: 80px;
         align-items: center;
     
     }
     .title {
         position: absolute;
-        top: 300px;
-        left: 50px;
+        top: 500px;
+        left: px;
         font-weight: 500;
         font-size: 80px;
         border: solid 3px;
@@ -259,4 +338,3 @@
 
 
 /* ----------------- FIN DE ESTRUCTURA RESPONSIVE-----------*/
-
