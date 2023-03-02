@@ -1,100 +1,132 @@
 $text-size1: 2rem;
 $text-size2: 1.5rem;
+
+/*----------------------------------ESCAPARATE------------------------------------*/
+.contenedor-imagen-pancarta {
+    height: 600px;
+    width: 100vw;
+    background-image: url(/images/imagen-13.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
 .picturesign {
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
 }
+
 .picotoro {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 container-articulos-paginas {
     margin: 30px 5px 30px 5px;
 }
+
 .textoDearticulo {
     font-size: $text-size1;
 }
+
+/*------------------------------------PARRAFO---------------------------------------*/
 .paragraph {
     p {
         font-size: $text-size2;
     }
 }
+
 paragraph-contenedor {
     margin-bottom: 30px;
- }
- .title-section {
+}
+
+.title-section {
+    position: absolute;
     top: 220px;
     left: 30px;
     font-weight: 500;
     font-size: 60px;
- }
+}
 
 
 
- /*-------NEWSLETTER--------------*/
+/*-------NEWSLETTER--------------*/
 
 
- .bg-image {
+.bg-image {
     width: 100%;
     height: 100vh;
- }
+}
 
- .contenedor-form {
+.contenedor-form {
     display: flex;
     width: 100vw;
-    
- }
- .bg-image {
+
+}
+
+.bg-image {
     background-color: black;
     height: 100vh;
- }
- .formulario {
+}
+
+.formulario {
     width: (100vw/2);
     position: absolute;
     top: 300px;
     left: 290px;
     color: white;
- }
- .formulario {
-    label{
+}
+
+.formulario {
+    label {
         color: rgb(244, 241, 241);
         font-weight: 900;
     }
+
     div {
         color: #fff;
         font-weight: 900;
     }
- }
- 
- .press {
+}
+
+.press {
     display: inline-block;
     padding-left: 1rem;
- }
+}
+
 .container-pio {
     height: 300px;
 }
+
 /*------------------NEWSLETTER 2--------------*/
-p{color:#fff;}
+p {
+    color: #fff;
+}
 
-.container-fluid2{
-width:100%;
-display: flex;
+.container-fluid2 {
+    width: 100%;
+    display: flex;
 }
 
 
-.container{
-max-width:1080px;
-width:100%;
-margin:auto;
-padding:32px;
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: auto;
+    padding: 32px;
 }
 
-.center{text-align:center;}
-.black{background-color:#252525;}
+.center {
+    text-align: center;
+}
 
-.parallax{
-height:700px;
-background-image:url(/images/imagen-13.jpg);
-background-size:cover;
-background-attachment: fixed;
+.black {
+    background-color: #252525;
+}
+
+.parallax {
+    height: 700px;
+    background-image: url(/images/imagen-13.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
