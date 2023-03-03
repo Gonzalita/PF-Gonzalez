@@ -474,20 +474,17 @@ a:hover {
   color: red !important; }
 
 /*----------------------------------ESCAPARATE------------------------------------*/
-.contenedor-imagen-pancarta {
-  height: 600px;
+.contenedor-imagen-pancarta, .pelu-dog1 {
+  height: 400px;
   width: 100vw;
   background-image: url(/images/imagen-13.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-attachment: fixed; }
 
 .picturesign {
   width: 100vw;
   object-fit: cover; }
-
-.picotoro {
-  margin-top: 20px;
-  margin-bottom: 20px; }
 
 container-articulos-paginas {
   margin: 30px 5px 30px 5px; }
@@ -496,11 +493,37 @@ container-articulos-paginas {
   font-size: 2rem; }
 
 /*------------------------------------PARRAFO---------------------------------------*/
-.paragraph p {
-  font-size: 1.5rem; }
+.paragraph {
+  width: 100vw; }
+  .paragraph p {
+    font-size: 1.5rem; }
 
 paragraph-contenedor {
   margin-bottom: 30px; }
+
+.pelu-h3, .pelu-h4 {
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  width: auto;
+  font-weight: 700;
+  color: #252525;
+  margin: 30px;
+  text-align: center;
+  background-color: #bebaba; }
+
+.pelu-list {
+  font-size: 1.5rem;
+  letter-spacing: normal; }
+  .pelu-list li {
+    margin: 30px; }
+
+.pelu-dog1 {
+  width: 100%;
+  background-image: url(/images/imagen-15.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right 200px bottom 20px; }
 
 .title-section {
   position: absolute;
@@ -508,6 +531,25 @@ paragraph-contenedor {
   left: 30px;
   font-weight: 500;
   font-size: 60px; }
+
+/*-----------------------------Aside----------------------------------------------*/
+.pelu-h5 {
+  display: flex;
+  width: auto;
+  background-color: #f3a113;
+  color: #fff;
+  border: #fff solid;
+  width: auto;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  margin: 20px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 2rem; }
+
+.pelu-escritora {
+  border-radius: 50%; }
 
 /*-------NEWSLETTER--------------*/
 .bg-image {
@@ -553,10 +595,9 @@ p {
   display: flex; }
 
 .container {
-  max-width: 1080px;
-  width: 100%;
-  margin: auto;
-  padding: 32px; }
+  width: auto !important;
+  margin: 0 40px;
+  padding: 20px; }
 
 .center {
   text-align: center; }
@@ -569,3 +610,14 @@ p {
   background-image: url(/images/imagen-13.jpg);
   background-size: cover;
   background-attachment: fixed; }
+
+.card-title {
+  color: black !important;
+  font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 1;
+  text-transform: uppercase; }
+
+.card-text {
+  color: black;
+  font-size: 0.5rem; }
