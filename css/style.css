@@ -474,7 +474,7 @@ a:hover {
   color: red !important; }
 
 /*----------------------------------ESCAPARATE------------------------------------*/
-.contenedor-imagen-pancarta, .pelu-dog1 {
+.contenedor-imagen-pancarta {
   height: 400px;
   width: 100vw;
   background-image: url(/images/imagen-13.jpg);
@@ -519,11 +519,12 @@ paragraph-contenedor {
     margin: 30px; }
 
 .pelu-dog1 {
+  height: 600px;
   width: 100%;
-  background-image: url(/images/imagen-15.webp);
-  background-size: contain;
+  background-image: url(/images/imagen-15.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right 200px bottom 20px; }
+  background-attachment: fixed; }
 
 .title-section {
   position: absolute;
@@ -539,17 +540,21 @@ paragraph-contenedor {
   background-color: #f3a113;
   color: #fff;
   border: #fff solid;
-  width: auto;
+  width: fit-content;
   text-align: center;
   letter-spacing: 0.05em;
   font-weight: 900;
-  margin: 20px;
+  margin: 30px;
   padding: 5px;
   text-transform: uppercase;
   font-size: 2rem; }
 
 .pelu-escritora {
-  border-radius: 50%; }
+  margin: 40px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*-------NEWSLETTER--------------*/
 .bg-image {
