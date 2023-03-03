@@ -84,13 +84,16 @@ body {
   display: flex;
   flex-direction: row; }
 
-.map:hover {
-  transform: scale(2); }
-
 .index-h5 {
   font-size: 2rem;
   margin: 30px;
   text-align: center; }
+
+.index-findus {
+  text-align: center; }
+
+.map {
+  animation-duration: 4s; }
 
 /*/ -------------------------------------------       GALERIA        ---------------------------     /*/
 .container-galeria {
@@ -474,11 +477,11 @@ a:hover {
   color: red !important; }
 
 /*----------------------------------ESCAPARATE------------------------------------*/
-.contenedor-imagen-pancarta {
-  height: 400px;
+.contenedor-imagen-pancarta, .contenedor-imagen-pancarta-adiestramiento, .contenedor-imagen-pancarta-premios {
+  height: 800px;
   width: 100vw;
   background-image: url(/images/imagen-13.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
@@ -518,7 +521,7 @@ paragraph-contenedor {
   .pelu-list li {
     margin: 30px; }
 
-.pelu-dog1 {
+.pelu-dog1, .premios-dog1 {
   height: 600px;
   width: 100%;
   background-image: url(/images/imagen-15.jpg);
@@ -626,3 +629,22 @@ p {
 .card-text {
   color: black;
   font-size: 0.5rem; }
+
+/*----------------------------------------------ADIESTRAMIENTO------------------------------*/
+.contenedor-imagen-pancarta-adiestramiento {
+  background-image: url(/images/imagen-12.jpg);
+  height: 800px;
+  background-size: cover; }
+
+/*----------------------------------------------PREMIOS-------------------------------------*/
+.contenedor-imagen-pancarta-premios {
+  width: 100%;
+  height: 800px;
+  background-image: url(/images/imagen-17.jpg);
+  background-size: cover; }
+
+.picotoro {
+  width: 100vw; }
+
+.premios-dog1 {
+  background-image: url(/images/imagen-18.jpg); }

@@ -3,10 +3,10 @@ $text-size2: 1.5rem;
 
 /*----------------------------------ESCAPARATE------------------------------------*/
 .contenedor-imagen-pancarta {
-    height: 400px;
+    height: 800px;
     width: 100vw;
     background-image: url(/images/imagen-13.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -200,4 +200,26 @@ p {
 .card-text {
     color: black;
     font-size: 0.5rem;
+}
+/*----------------------------------------------ADIESTRAMIENTO------------------------------*/
+.contenedor-imagen-pancarta-adiestramiento {
+    @extend .contenedor-imagen-pancarta;
+    background-image: url(/images/imagen-12.jpg);
+    height: 800px;
+    background-size: cover
+}
+/*----------------------------------------------PREMIOS-------------------------------------*/
+.contenedor-imagen-pancarta-premios {
+    @extend .contenedor-imagen-pancarta;
+    width: 100%;
+    height: 800px;
+    background-image: url(/images/imagen-17.jpg);
+    background-size: cover;
+}
+.picotoro {
+    width: 100vw;
+}
+.premios-dog1 {
+    @extend .pelu-dog1;
+    background-image: url(/images/imagen-18.jpg);
 }

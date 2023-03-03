@@ -12,11 +12,14 @@
     display: flex;
     flex-direction: row;
 }
-.map:hover {
-    transform: scale(2)
-}
 .index-h5 {
     font-size: 2rem;
     margin: 30px;
     text-align: center;
+}
+.index-findus {
+    text-align: center;
+}
+.map {
+   animation-duration: 4s; 
 }
