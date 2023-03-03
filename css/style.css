@@ -480,7 +480,7 @@ a:hover {
 .contenedor-imagen-pancarta, .contenedor-imagen-pancarta-adiestramiento, .contenedor-imagen-pancarta-premios {
   height: 800px;
   width: 100vw;
-  background-image: url(/images/imagen-13.jpg);
+  background-image: url(https://res.cloudinary.com/djszx4hkw/image/upload/v1677874286/dogs/imagen-13_vecrhk.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -524,7 +524,7 @@ paragraph-contenedor {
 .pelu-dog1, .premios-dog1 {
   height: 600px;
   width: 100%;
-  background-image: url(/images/imagen-15.jpg);
+  background-image: url(https://res.cloudinary.com/djszx4hkw/image/upload/v1677874286/dogs/imagen-15_lxfg33.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; }
@@ -615,7 +615,7 @@ p {
 
 .parallax {
   height: 700px;
-  background-image: url(/images/imagen-13.jpg);
+  background-image: url(https://res.cloudinary.com/djszx4hkw/image/upload/v1677874286/dogs/imagen-13_vecrhk.jpg);
   background-size: cover;
   background-attachment: fixed; }
 
@@ -630,9 +630,17 @@ p {
   color: black;
   font-size: 0.5rem; }
 
+.card {
+  margin-top: 30px; }
+  .card a {
+    text-decoration: none; }
+  .card :hover {
+    background-color: #c3934e;
+    color: #f3f0ec; }
+
 /*----------------------------------------------ADIESTRAMIENTO------------------------------*/
 .contenedor-imagen-pancarta-adiestramiento {
-  background-image: url(/images/imagen-12.jpg);
+  background-image: url(https://res.cloudinary.com/djszx4hkw/image/upload/v1677874286/dogs/imagen-12_ir3qrp.jpg);
   height: 800px;
   background-size: cover; }
 
@@ -640,11 +648,11 @@ p {
 .contenedor-imagen-pancarta-premios {
   width: 100%;
   height: 800px;
-  background-image: url(/images/imagen-17.jpg);
+  background-image: url(https://res.cloudinary.com/djszx4hkw/image/upload/v1677874285/dogs/imagen-17_q2r7f4.jpg);
   background-size: cover; }
 
 .picotoro {
   width: 100vw; }
 
 .premios-dog1 {
-  background-image: url(/images/imagen-18.jpg); }
+  background-image: url(https://res.cloudinary.com/djszx4hkw/image/upload/v1677874285/dogs/imagen-14_o9c0sq.jpg); }
